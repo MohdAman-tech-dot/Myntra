@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Part */
+header {
+    max-width: 100vw;
+    height: 80px;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .05);
+    background-color: white;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/* top navigation bar section */
+.container {
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    width: 53px;
+    height: 36px;
+}
+
+nav {
+    width: 525px;
+    height: 80px;
+}
+
+nav ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 14px;
+    font-family: "Assistant", sans-serif;
+    color: #282c3f;
+    font-weight: 700;
+}
+
+/* search bar */
+.search-bar {
+    width: 400px;
+    height: 40px;
+    display: flex;
+    background-color: #F5F5F6;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+.search-bar img {
+    width: 15px;
+    margin: 10px;
+}
+
+.search-bar input {
+    background-color: #F5F5F6;
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    padding-left: 20px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+/* Profile, Wishlist, Kart */
+.pro-wish-bag {
+    display: flex;
+    text-align: center;
+    gap: 20px;
+    margin-left: 30px;
+}
+
+/* Header Part end */
+
+/* Middele section */
+.banner,
+.flatoffer,
+.oyehoye,
+.offer,
+.categotybanner,
+.items,
+.categoryItems {
+    width: 1000px;
+    display: flex;
+    margin: 80px auto;
+}
+
+.banner img {
+    width: 50%;
+}
+
+.categotybanner img,
+.lastbanner img {
+    width: 100%;
+}
+
+.categoryItems {
+    flex-wrap: wrap;
+}
+
+/* MEGA MENU */
+.overlay {
+    position: absolute;
+    width: 1100px;
+    height: 350px;
+    background-color: white;
+    box-shadow: 2px 2px 10px 5px lightgray;
+    bottom: 100%;
+    left: 0;
+    margin: 80px 50px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+    line-height: 35px;
+}
+
+.men:hover .overlay {
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* HOME SECTION */
+.top-part img {
+    width: 1200px;
+    padding: 110px 60px;
+}
+
+#home-section ul {
+    float: right;
+    padding-right: 50px;
+    /* line-height: 20px; */
+    color: #3E4152;
+    font-size: 15px;
+
+}
+
+#home-section ul li {
+    padding: 5px 0px;
+}
+
+/* middle-part */
+.middle-part {
+    width: 80%;
+    margin: -100px 0px 0px 50px;
+    color: #3E4152;
+    letter-spacing: 5px;
+    word-spacing: 2.4px;
+}
+
+.middle-part h1 {
+    margin: 50px 0px 10px 30px;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: Assistant;
+}
+
+.room-decor {
+    display: flex;
+}
+
+.room-decor img {
+    width: 450px;
+    height: 350px;
+    padding: 10px;
+}
+
+/* Bottom part */
+.inspire-banner img {
+    width: 100%;
+}
+
+.modern-art {
+    display: flex;
+    width: 100%;
+    background-color: #EFEDED;
+    padding-bottom: 100px;
+    padding-left: 100px;
+}
+
+.item img {
+    width: 350px;
+    height: 350px;
+    margin-left: ;
+}
+
+.companies {
+    width: 1200px;
+    margin-top: 100px;
+}
+
+.companies h1 {
+    padding-left: 60px;
+    font-size: 38px;
+    font-weight: 600;
+    font-family: Assistant;
+    letter-spacing: 2.4px;
+}
+
+.company-names {
+    display: flex;
+    margin: 50px 0px 150px 50px;
+}
+
+.company-logos img {
+    width: 230px;
+    padding-right: 10px;
+}
+
+/* CLICK ON THE CARD THEN SLIDE RIGHT TO LEFT */
+.upto-off {
+    /* border: 2px solid crimson;
+    width: 576px;
+    height: 288px;
+    margin: auto; */
+    position: relative;
+}
+
+.flate-offer {
+    position: absolute;
+    top: 120px;
+    right: -532px;
+}
+
+/* offer card */
+.offer-card {
+    width: 576px;
+    height: 288px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: #3e4152;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.flate-offer:active {
+    right: 0;
+    transition: 1s;
+}
+
+.flate-offer:active .offer-card {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* CLICK ON THE CARD THEN SLIDE RIGHT TO LEFT END*/
+
+/* Side Bar */
+.sidebar-layout {
+    float: left;
+    width: 44px;
+    height: 288px;
+}
+
+.sidebar {
+    /* position: fixed; */
+    bottom: 130px;
+    height: 100%;
+    background-color: #535766;
+    z-index: 6;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.down-arrow {
+    margin: 0px 16px 0px 16px;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+}
+
+.sidebar p {
+    writing-mode: sideways-rl;
+    transform: rotate(-180deg);
+    padding: 4px;
+    height: 200px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    color: #fcfcfc;
+}
+
+.top-part {
+    padding: 24px 0 0 80px;
+}
+
+.sardar img {
+    width: 200px;
+    height: 120px;
+    padding: 24px 0 0 80px;
+}
+
+.coupon-login-part {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 0 40px;
+}
+
+.coupon span {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.coupon div {
+    font-size: 12px;
+    margin-top: 4px;
+    background-color: lightgrey;
+    width: 145px;
+}
+
+.button {
+    width: 172px;
+    height: 48px;
+    border-radius: 4px;
+    background-color: #ff3f6c;
+    color: #fff;
+    float: right;
+    margin-right: 60px;
+}
+
+.button div {
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    height: 100%;
+    line-height: 48px;
+    text-align: center;
+    color: white;
+}
+
+.lastpart {
+    margin-top: 20px;
+}
+
+.lastpart div {
+    float: left;
+    padding-left: 30px;
+}
+
+/*Footer section */
+footer {
+    width: 100%;
+    margin-top: 80px;
+    margin-left: 70px;
+}
+
+/*Details (online shopping, policies, app links) */
+/* ONLINE SHOPPING */
+.detail {
+    display: flex;
+    gap: 70px;
+}
+
+.online-shopping h4 {
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.online-shopping li {
+    color: #696b79;
+    padding: 5px 0px;
+}
+
+/* CUSTOMER POLICIES */
+.app-store {
+    margin-bottom: 15px;
+}
+
+.myntra-app img {
+    width: 150px;
+    height: 45px;
+}
+
+/* MYNTRA APP ON MOBILE */
+.social-media h4 {
+    padding-bottom: 10px;
+}
+
+.social-media i {
+    font-size: 25px;
+    padding: 0px 5px;
+    color: #696b79;
+}
+
+/* GAURANTEE PART */
+.desktop-section {
+    width: 250px;
+    margin-left: 60px;
+}
+
+.gaurantee {
+    display: flex;
+    gap: 10px;
+    line-height: 22px;
+    padding-bottom: 20px;
+}
+
+.text {
+    font-size: 14px;
+    color: #9496AB;
+}
+
+.text strong {
+    font-weight: 700;
+    color: #282c3f;
+}
+
+.Popular-search {
+    width: 1080px;
+    margin-top: 30px;
+}
+
+.Popular-search h2 {
+    font-size: 12px;
+    font-weight: 700;
+    color: #282c3f;
+    margin-top: -15px;
+    margin-top: 20px;
+}
+
+.Popular-search p {
+    color: #696b79;
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 30px;
+}
+
+.bottomsection {
+    display: flex;
+    align-items: center;
+    padding: 30px 0px;
+    justify-content: space-between;
+}
+
+.bottomsection div {
+    color: #94969f;
+}
+
+.office-address {
+    width: 1080px;
+    margin: 30px 0;
+}
+
+.office-address h2 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #282c3f;
+    padding-bottom: 30px;
+}
+
+.address-detail {
+    display: flex;
+    color: #94969f;
+    font-size: 15px;
+}
+
+.address-detail .contact {
+    padding: 50px 30px 0px 400px;
+}
+
+.online-myntra-shopping {
+    width: 1080px;
+    text-align: justify;
+}
+.online-myntra-shopping h1 {
+    color: #535766 ;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.online-myntra-shopping p {
+    color: #696b79;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.inside ul li{
+    color: #696b79;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.myntra-studio p {
+    padding-bottom: 15px;
+    line-height: 20px;
+}
